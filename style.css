@@ -1,0 +1,85 @@
+body {
+  background-color: #5e96df;
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.flexWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.addTodoWrapper {
+  display: flex;
+  width: 500px;
+  background: #f38d68;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+.inputWrapper {
+  width: 80%;
+}
+.inputWrapper input {
+  height: 25px;
+  width: 100%;
+  outline: none;
+}
+.btnWrapper {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+}
+.btnWrapper button {
+  width: 80%;
+  background: #4e99ef;
+  color: #000;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 25px;
+}
+.todoItem {
+  display: flex;
+  width: 500px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #a1fcdf;
+}
+.desk {
+  width: 80%;
+}
+.btns {
+  width: 20%;
+  justify-content: flex-end;
+}
+.btns button {
+  background: #ed504c;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.checked {
+  background: #7eef4e;
+  opacity: 0.5;
+}
+.deleted {
+  animation: opasity 1s ease-in-out;
+}
+@keyframes opasity {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
